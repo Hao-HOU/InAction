@@ -1,12 +1,10 @@
 package com.acehouhao.framework;
 
-import com.acehouhao.framework.helper.BeanHelper;
-import com.acehouhao.framework.helper.ClassHelper;
-import com.acehouhao.framework.helper.ControllerHelper;
-import com.acehouhao.framework.helper.IocHelper;
+import com.acehouhao.framework.helper.*;
 import com.acehouhao.framework.util.ClassUtil;
 
 /**
+ * 加载相应的 Helper 类
  * Created by Hao HOU on 2017/6/16.
  */
 public final class HelperLoader {
@@ -14,6 +12,7 @@ public final class HelperLoader {
         Class<?>[] classList = {
                 ClassHelper.class,
                 BeanHelper.class,
+                AopHelper.class,
                 IocHelper.class,
                 ControllerHelper.class
         };
