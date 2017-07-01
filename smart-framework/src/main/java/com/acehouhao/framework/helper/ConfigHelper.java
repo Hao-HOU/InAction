@@ -10,7 +10,8 @@ import java.util.Properties;
  * 属性文件助手类
  */
 public final class ConfigHelper {
-    private static final Properties CONFIG_PROPS = PropsUtil .loadProps(ConfigConstant.CONFIG_FILE);
+
+    private static final Properties CONFIG_PROPS = PropsUtil.loadProps(ConfigConstant.CONFIG_FILE);
 
     /**
      * 获取 JDBC 驱动
@@ -43,7 +44,7 @@ public final class ConfigHelper {
     /**
      * 获取应用基础包名
      */
-    public static String getAppBasePackeage() {
+    public static String getAppBasePackage() {
         return PropsUtil.getString(CONFIG_PROPS, ConfigConstant.APP_BASE_PACKAGE);
     }
 
